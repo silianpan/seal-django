@@ -6,11 +6,12 @@
 # @File    : urls.py
 # @Software: PyCharm
 
-from django.urls import path
+from django.urls import re_path
 
 from . import views
 
 urlpatterns = [
-    path(r'', views.index, name='index'),
-    path(r'topics/', views.topics, name='topics')
+    re_path(r'^$', views.index, name='index'),
+    re_path(r'^topics/$', views.topics, name='topics'),
+    re_path(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic')
 ]
