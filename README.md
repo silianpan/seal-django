@@ -1,4 +1,4 @@
-## Flask部署
+## Django部署
 ### 1. 环境
 * OS：CentOS7 x86_64
 * Python: 3.6
