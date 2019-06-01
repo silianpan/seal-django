@@ -108,3 +108,9 @@ location / {
        alias /mnt/data/liupan/gcs-django;
    }
 ```
+
+### 11. pipenv更改源
+直接修改Pipfile中的url
+```ini
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+```

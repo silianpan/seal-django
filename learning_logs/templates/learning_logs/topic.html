@@ -6,12 +6,13 @@
     <ul>
         {% for entry in entries %}
             <li>
-                <p>{{ entry.date_added|date:'M d, Y H:i' }}</p>
+                <p>{{ entry.date_added|date:'Y-m-d H:i' }}</p>
                 <p>{{ entry.text|linebreaks }}</p>
             </li>
         {% empty %}
             <li>
                 没有学习记录
             </li>
-        {% endfor %} </ul>
+        {% endfor %}
+    </ul>
 {% endblock content %}
